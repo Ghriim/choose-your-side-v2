@@ -8,10 +8,16 @@
  * Controller of the chooseYourSideApp
  */
 angular.module('chooseYourSideApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('AboutCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+
+    $scope.getExperiences = function() {
+        $http.get('data/experiences/experiences.json').success(function(data) {
+            $scope.experiences = data;
+        });
+    };
+  }]);

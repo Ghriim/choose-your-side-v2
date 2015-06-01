@@ -1,1 +1,39 @@
-Posts
+<div id="posts" ng-init="getPosts()">
+	<section class="jumbotron">
+		<div class="container">
+			<img class="pull-left" src="images/starwars/dark-vador.png" alt="" />
+
+			<p>
+				The Emperor will show you the true nature of the Force
+			</p>
+		</div>
+	</section>
+
+	<section class="container">
+		<article class="row" ng-repeat="post in posts">
+			<div class="col-md-6">
+				<a href="#" title="">
+					<img class="img-responsive" src="data/posts/{{ post.slug }}/cover.png" alt="" />
+				</a>
+
+				<span class="post-date">
+					<span class="day">23</span>
+					<span class="month-and-year">
+						<span class="month">Jan</span><br />
+						<span class="year">2015</span>
+					</span>
+				</span>
+			</div>
+
+			<div class="col-md-6">
+				<h3><a href="#/blog/{{ post.slug }}" title="">{{ post.title }}</a></h3>
+
+				<p>{{ post.abstract }}</p>
+
+				<ul class="tags list-inline">
+					<li ng-repeat="tag in post.tags"><a href="" title="{{ tag }}">{{ tag }}</a></li>
+				</ul>
+			</div>
+		</article>
+	</section>
+</div>
