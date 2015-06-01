@@ -1,0 +1,32 @@
+<div id="post" ng-init="getCurrentPost()">
+	<section class="jumbotron">
+		<div class="container">
+			<img class="pull-left" src="src/assets/images/starwars/chewie.png" alt="" />
+
+			<p>
+				Gggggrrrrrr rrrraaaahhh rrrrrrggghhhhnn
+			</p>
+		</div>
+	</section>
+
+	<div class="container">
+		<section ng-include="getPostContent()"></section>
+
+		<section ng-repeat="post in similarPosts" class="row">
+			<article class="col-md-4">
+				{{ post.slug }}
+				<a href="#" title="">
+					<img class="img-responsive" src="http://palo-it.com/wp-content/uploads/Polymer-669x272.png" alt="" />
+				</a>
+
+				<span class="post-date">
+					<span class="day">23</span>
+					<span class="month-and-year">
+						<span class="month">Jan</span><br />
+						<span class="year">2015</span>
+					</span>
+				</span>
+			</article>
+		</section>
+	</div>
+</div>

@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name chooseYourSideApp.controller:MainCtrl
+ * @name chooseYourSideApp.controller:HomeCtrl
  * @description
- * # MainCtrl
+ * # HomeCtrl
  * Controller of the chooseYourSideApp
  */
 angular.module('chooseYourSideApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
