@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Moriane Morellec",
+    "slug": "moriane-morellec",
+    "abstract": "Editorial project manager",
+    "creationDate": "",
+    "status" : "active"
+  },
+  {
+    "title": "Quentin Vignier",
+    "slug": "quentin-vignier",
+    "abstract": "My personnal web site",
+    "creationDate": "",
+    "status" : "active"
+  },
+  {
+    "title": "Pascal Blondeau",
+    "slug": "pascal-blondeau",
+    "abstract": "Artist photographer",
+    "creationDate": "",
+    "status" : "active"
+  },
+  {
+    "title": "MobPartner",
+    "slug": "mobpartner",
+    "abstract": "Mobile affiliation platform",
+    "creationDate": "",
+    "status" : "active"
+  },
+  {
+    "title": "HubWin Mamans",
+    "slug": "hubwin",
+    "abstract": "Social network for mums",
+    "creationDate": "",
+    "status" : "active"
+  },
+  {
+    "title": "Telemetris",
+    "slug": "telemetris",
+    "abstract": "Software editor",
+    "creationDate": "",
+    "status" : "active"
+  }
+]

@@ -1,0 +1,36 @@
+<header>
+	<h3>Experiences</h3>
+	<span class="text-italic">&laquo;Do or not, there is no try &raquo;</span>
+</header>
+
+<div class="row" ng-init="getExperiences()">
+	<div class="job-container col-md-4"  ng-repeat="experience in experiences">
+		<article class="job">
+			<a href="#/about/experiences/{{ experience.slug }}" title="">
+				<header>
+					<img src="data/experiences/{{ experience.slug }}/cover.png" alt="{{ experience.title }}" />
+					<h4>{{ experience.title }}</h4>
+					<p class="abstract">
+						{{ experience.abstract }}
+					</p>
+				</header>
+
+				<main>
+					<p>
+						Web Developper since 2010, I'm specialized on Symfony2 but also love to play with other technology (AngularJS, MeteorJS, Play!).
+					</p>
+
+					<span class="period"></span>
+
+					<ul class="list-inline tags">
+						<li>AngularJS</li>
+						<li>HTML 5</li>
+						<li>CSS 3</li>
+						<li>jQuery</li>
+						<li>Git</li>
+					</ul>
+				</main>
+			</a>
+		</article>
+	</div>
+</div>
